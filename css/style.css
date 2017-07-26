@@ -11,7 +11,9 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
 }
 
 .clear-fix {
@@ -26,23 +28,23 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #9568ac;
   line-height: 48px;
   display: inline;
 }
 
+
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #745086;
   line-height: 29px;
-  padding: 10px;
 }
 
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: #262626;
   line-height: 22px;
 }
 
@@ -53,10 +55,16 @@ h4 {
   line-height: 17px;
 }
 
+h5 {
+  color: #745086;
+  text-decoration: none;
+  margin-top: 30px;
+  display: block;
+}
+
 h2,
 h3,
-h4,
-h5 {
+h4,{
   padding: 10px 5%;
 
 }
@@ -81,39 +89,60 @@ h5 {
 
 p {
   font-size: 14px;
-  color: #333;
+  color: #adadad;
   line-height: 21px;
 }
 
 a {
-  color: #1199c3;
+  color: #745086;
   text-decoration: none;
   margin-top: 10px;
   display: block;
 }
 
+a:hover {
+    color: #adadad;
+}
+
+#topContacts {
+    display: block;
+}
+
+#topContacts li {
+    padding: 5px;
+}
+
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
+  font-size: 20px;
   line-height: 28px;
 }
 
+
+#skills {
+    text-align: center;
+    display: inline-flex;
+}
+
+#skills li {
+    padding: 5px;
+}
+
 #skills-h3 {
-  color: #f5ae23;
-  display: none;
+  color: #9568ac;
+  text-align: center;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #9568ac;
+  color: #262626;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #9568ac;
 }
 
 .white-text {
-  font-weight: bold;
+  font-weight: normal;
   color: #fff;
 }
 
@@ -129,7 +158,29 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #333333;
+  background-image: url("../images/portraitMe.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: right;
+
+}
+
+#projects {
+    background-color: rgba(226, 187, 249, 0.46);
+    padding: 50px;
+}
+
+#workExperience {
+    background-color: rgba(127, 127, 127, 0.47);
+    padding: 50px;
+
+}
+
+#education {
+    background-color: rgba(161, 243, 197, 0.43);
+    padding: 50px;
+
 }
 
 .flex-box {
@@ -156,11 +207,11 @@ ul {
   list-style-type: none;
 }
 
+
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
-  display: none;
+  max-width: 20%;
 }
 
 img {
@@ -169,10 +220,12 @@ img {
 
 span {
   padding: 5px;
+  color: #adadad;
 }
 
 #lets-connect {
   text-align: center;
+  list-style: none;
 }
 
 /* Media queries to handle various device widths */
