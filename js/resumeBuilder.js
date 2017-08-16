@@ -22,7 +22,7 @@ var bio = {
         "linkedIn": "https://www.linkedin.com/in/shannon-teer-80b19211/",
         "location": "Austin, TX"
     },
-    "welcomeMessage": "Web designer/Developer specializing in responsive design and SEO",
+    "welcomeMessage": "Web designer/Developer specializing in Responsive design and SEO",
     "pictureUrl": "",
     "skills": skills
 };
